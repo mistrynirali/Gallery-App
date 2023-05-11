@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+.app-container {
+  padding: 2rem;
+}
+
+.img-container {
+  width: 100%;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+.image {
+  width: 100%;
+  border-radius: 20px;
+  animation: fade-in 300ms ease-in-out alternate;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.heading {
+  font-size: 1.5rem;
+  color: #1e293b;
+  margin-bottom: 1.5rem;
+}
+.paragraph {
+  color: #64748b;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+.thumbnail-container {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .main-heading {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .description {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
